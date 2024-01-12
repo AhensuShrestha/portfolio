@@ -1,0 +1,159 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-red);
+    width: 100%;
+}
+
+nav li {
+    padding: 0.5rem 1rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+
+}
+
+ul a {
+    text-decoration: none;
+    display: block;
+    padding: 0.7rem;
+    color: var(--main-white);
+    font-size: 2rem;
+}
+
+a:hover, a:focus {
+    background-color: var(--main-blue);
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--main-gray);
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--main-white);
+}
+
+.lastsectionclass>h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--main-white);
+}
+
+.welcome-section p {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--main-red);
+}
+
+.project_section {
+    text-align: center;
+    background-color: var(--main-blue);
+} 
+
+.htwoprojectsection {
+    color: var(--main-white);
+    border-bottom: 2px solid var(--main-white);
+    margin: 0 auto 3rem auto ;
+    padding: 2rem;
+}
+
+.project_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    
+} 
+
+.project_grid a {
+    color: var(--main-white);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.image {
+    width: 100%;
+    
+}
+
+.project_grid p span {
+    background-color: var(--main-gray);
+    
+}
+
+.project_grid p {
+    margin: 1.3rem;
+    
+}
+
+.lastsectionclass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+    background-color: var(--main-gray);
+}
+
+.lastsectionclass>p {
+    color: var(--main-white);
+    font-size: larger;
+    font-weight: bold;
+    
+}
+
+.mail {
+    padding: 2rem ;
+}
+
+footer {
+    border-top: 4px solid var(--main-red);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-gray);
+    min-height: 20vh;
+}
+
+footer>p {
+    color: var(--main-white);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
